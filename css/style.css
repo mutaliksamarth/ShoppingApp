@@ -1,0 +1,177 @@
+/* red - #ff6161 green - #388e3c yellow - #ff9f00*/
+
+#social-fb:hover
+{
+	color: #3B5998;
+}
+#social-tw:hover
+{
+	color: #4099FF;
+}
+#social-gp:hover
+{
+	color: #d34836;
+}
+#social-in:hover
+{
+	color: #f39c12;
+}
+.a1
+{
+	color:#ffffff;
+}
+.a1:hover
+{
+	color:#c9cdd3;
+}
+.specs
+{
+	margin-top:20px;
+	border-left: solid 1px #f0f0f0;
+	border-right: solid 1px #f0f0f0;
+	border-bottom: solid 1px #f0f0f0;
+}
+.heading
+{
+	border-top: solid 1px #f0f0f0;
+	font-weight: 700;
+	font-size: 24px;
+	padding:20px;
+	font-variant: small-caps;
+}
+.specs-list
+{
+	padding: 20px;
+	border-top: solid 1px #f0f0f0;
+	line-height: 2.5em;
+}
+
+.list-heading
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.subheading
+{
+	font-weight: 600px;
+	font-size: 16px;
+	color: #878787;
+}
+
+.list-attribute
+{
+	font-weight: 600;
+}
+
+#buttons button
+{
+	height:50px;
+	font-size: 16px;
+	border:none;
+	border-radius: 2px;
+}
+
+#cart_button
+{
+	background: #ff9f00;
+}
+
+.nopadding-right
+{
+	padding-right:5px;
+}
+
+.nopadding-left
+{
+	padding-left: 5px;
+}
+
+.rating-section
+{
+	padding: 20px;
+}
+
+.star-overall
+{
+	font-size: 24px;
+	margin-bottom: 15px;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	background-color:#388e3c;
+}
+
+.review
+{
+	font-size: 16px;
+	color: #878787;
+	font-weight: bold;
+	line-height: 1.4em;
+}
+
+.progress
+{
+	width: 150px;
+	height: 5px;
+	margin-top: 7px;
+}
+
+.review-number
+{
+	color: #878787;
+	font-size: 12px;
+}
+
+.rating-section
+{
+	padding:20px;
+}
+
+.comments-list
+{
+	margin-top:20px;
+	border: solid 1px #f0f0f0;
+}
+
+.comments-rating
+{
+	color: white;
+	background-color: #388e3c;
+	padding: 3px;
+	border-radius: 3px;
+	font-size: 12px;
+}
+
+.comments-footer
+{
+	color: #878787;
+}
+
+.comments-heading-text
+{
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.comments-description
+{
+	margin-top: 15px;
+}
+
+.comments-dislike
+{
+	margin-left: 50px;
+}
+
+.comments-dropdown
+{
+	margin-left: 50px;
+	margin-right: 10px;
+}
+
+.comments-dropdown-li-a
+{
+	color: #f0f0f0;
+	background-color: none;
+}
