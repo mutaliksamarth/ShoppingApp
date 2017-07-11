@@ -12,7 +12,9 @@
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="js/bootstrap.js"></script>
-
+		<script src="js/ajax-utils.js"></script>
+		<script src="js/angular.js"></script>
+		<script src="js/productJS.js"></script>
 		<script src="https://use.fontawesome.com/b1af24592c.js"></script>
 
 		<!--<script type="text/javascript">
@@ -158,313 +160,192 @@
 				</div>
 			</nav>
 
-			<div class="container-fluid" style="margin:70px 0px 20px auto;">
-				<div class="col-md-3">
-					<img src="http://via.placeholder.com/1920x1600" style="border: solid 1px #f0f0f0; padding:5px; max-width:100%; max-height:100%;">
-					<div class="row" style="margin-top:20px;" id="buttons">
-						<div class="col-md-6 nopadding-right">
-							<button type="button" class="btn btn-info btn-block" id="buy_button"><span class="glyphicon glyphicon-flag"></span> Buy Now</button>
-						</div>
-						<div class="col-md-6 nopadding-left">
-							<button type="button" class="btn btn-info btn-block" id="cart_button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-9">
-					<h3>An Electronic Item</h3>
-					<div class="">
-						<span style="margin:10px 10px 10px 0px; padding:5px; color:white; border-radius:5px; background-color:#388e3c; font-size:12px;">4.1 &#9733 </span>
-						<span style="color:#8c8c8c; font-size:14px;">20 ratings &amp; 7 reviews</span>
-					</div>
-					<div class="" style="margin-top:10px;">
-						<span style="font-size:24px;"><b>&#8377; 3000</b></span>
-						<span style="color:#8c8c8c; font-size:16px; margin-left:10px;"><strike>&#8377; 4500</strike></span>
-					</div>
-					<div class="row" style="margin-top:10px;">
-						<div class="col-md-2">
-							<span style="color:#8c8c8c">Delivery</span>
-						</div>
-						<div class="col-md-10">
-							<div class="col-md-5" style="border-bottom: solid px #2874f0; padding: 0 0 0px 0;">
-								<div class="form-group">
-									<form class="form-inline" method="post">
-										<div class="form-group">
-											<input type="text" name="pincode" placeholder="Check your pincode here" style="border:none; outline:none;">
-										</div>
-										<div class="form-group">
-											<span style="color:#2874f0; margin-left:auto; font-weight:600; font-size:14px; cursor:pointer">Check</span>
-										</div>
-									</form>
-								</div>
+			<div id="main-content">
+				 <div class="container-fluid" style="margin:70px 0px 20px auto;">
+					<div class="col-md-3">
+						<img src="http://placehold.it/1920x1600" style="border: solid 1px #f0f0f0; padding:5px; max-width:100%; max-height:100%;">
+						<div class="row" style="margin-top:20px;" id="buttons">
+							<div class="col-md-6 nopadding-right">
+								<button type="button" class="btn btn-info btn-block" id="buy_button"><span class="glyphicon glyphicon-flag"></span> Buy Now</button>
+							</div>
+							<div class="col-md-6 nopadding-left">
+								<button type="button" class="btn btn-info btn-block" id="cart_button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
 							</div>
 						</div>
 					</div>
-					<div class="row" style="margin-top:10px;">
-						<div class="col-md-2">
-							<span style="color:#8c8c8c">Features</span>
+					<div class="col-md-9">
+						<h3 id="name"></h3>
+						<div class="">
+							<span style="margin:10px 10px 10px 0px; padding:5px; color:white; border-radius:5px; background-color:#388e3c; font-size:12px;" id="rating-header"></span>
+							<span style="color:#8c8c8c; font-size:14px;"><span id="rating-header-number"></span> &amp; <span id="rating-header-rating"></span></span>
 						</div>
-						<div class="col-md-4">
-							<ul class="features_ul">
-								<li class="features_li">Laptop, Audio Player, Tablet, Mobile</li>
-								<li class="features_li">Design: Canalphone|Type: In the Ear</li>
-								<li class="features_li">Wired</li>
-							</ul>
+						<div class="" style="margin-top:10px;">
+							<span style="font-size:24px;"><b id="discountedPrice"></b></span>
+							<span style="color:#8c8c8c; font-size:16px; margin-left:10px;"><strike><span id="originalPrice"></span></strike></span>
 						</div>
-						<div class="col-md-2">
-							<span style="color:#8c8c8c">Services</span>
-						</div>
-						<div class="col-md-4">
-							<ul class="features_ul">
-								<li class="features_li">10 Day Replacement Policy</li>
-								<li class="features_li">2 Year Limited Domestic Warranty</li>
-								<li class="features_li">COD Available</li>
-							</ul>
-						</div>
-					</div>
-					<div class="row" style="margin-top:10px;">
-						<div class="col-md-2">
-							<span style="color:#8c8c8c">Seller</span>
-						</div>
-						<div class="col-md-10">
-							<a href="#" style="text-decoration: none; font-weight:bold;">ABC</a>
-						</div>
-					</div>
-					<div class="row" style="margin-top:15px;">
-						<div class="col-md-2">
-							<span style="color:#8c8c8c">Description</span>
-						</div>
-						<div class="col-md-10">
-							<p style="font-weight:600; display:block;">Skullcandy S2DUL-J522 Jib With Pill Mic Wired Headset Black Swirl What is Pill Mic?  It is only used for the conversation.  No button to receive/end calls.  No button to play/pause music.  No button for volume control. Designed for the music lovers, the Skullcandy JIB with Pill Mic In-Ear Earphone comes with an amazing amalgamation of style with performance. It features a 3.5 mm connector that facilitates you to easily connect the earphone with almost any gadget or device. With a frequency response range of 20-20 KHz, this excellent earphone produces crystal clear sound infused with utmost clarity and maximum noise suppression.Skullcandy JIB earphone offers 16 ohms impedance for an incredible audio quality. Get ready to enjoy your favourite songs with powerful and crystal clear sound performance with the Skullcandy earphone.</p>
-							<!--<a href="#" id="read_more">Read more</a>-->
-						</div>
-					</div>
-					<div class="specs">
-						<div class="heading">
-							Specifications
-						</div>
-						<div class="specs-list">
-							<div class="list-heading">
-								General
+						<div class="row" style="margin-top:10px;">
+							<div class="col-md-2">
+								<span style="color:#8c8c8c">Delivery</span>
 							</div>
-							<div class="row">
-								<div class="col-md-3 subheading">
-									Brand
-								</div>
-								<div class="col-md-9 list-attribute">
-									Skullcandy
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 subheading">
-									Inline Remote
-								</div>
-								<div class="col-md-9 list-attribute">
-									Yes
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 subheading">
-									Designed For
-								</div>
-								<div class="col-md-9 list-attribute">
-									Laptops, Smartphones, Tablets, Computers
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 subheading">
-									Flatwire
-								</div>
-								<div class="col-md-9 list-attribute">
-									No
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 subheading">
-									Charge Time
-								</div>
-								<div class="col-md-9 list-attribute">
-									1.5 hours
-								</div>
-							</div>
-						</div>
-						<div class="specs-list">
-							<div class="list-heading">
-								Dimensions
-							</div>
-							<div class="row">
-								<div class="col-md-3 subheading">
-									Weight
-								</div>
-								<div class="col-md-9 list-attribute">
-									14g
-								</div>
-							</div>
-						</div>
-						<div class="specs-list">
-							<div class="list-heading">
-								Warranty
-							</div>
-							<div class="row">
-								<div class="col-md-3 subheading">
-									Warranty Summary
-								</div>
-								<div class="col-md-9 list-attribute">
-									1 year manufacture warranty
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 subheading">
-									Covered in Warranty
-								</div>
-								<div class="col-md-9 list-attribute">
-									Manufacture Defect
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 subheading">
-									Not Covered in Warranty
-								</div>
-								<div class="col-md-9 list-attribute">
-									Physical Defect
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 subheading">
-									Domestic Warranty
-								</div>
-								<div class="col-md-9 list-attribute">
-									1 year
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="rating-comment">
-						<div class="comments-list">
-							<div class="row rating-section">
-								<div class="col-md-2">
-									<span class="star-overall">4 &#9733</span>
-									<div class="review" style="margin-top: 15px;">
-										20 ratings
-									</div>
-									<div class="review">
-										7 reviews
+							<div class="col-md-10">
+								<div class="col-md-5" style="border-bottom: solid px #2874f0; padding: 0 0 0px 0;">
+									<div class="form-group">
+										<form class="form-inline" method="post">
+											<div class="form-group">
+												<input type="text" name="pincode" placeholder="Check your pincode here" style="border:none; outline:none;">
+											</div>
+											<div class="form-group">
+												<span style="color:#2874f0; margin-left:auto; font-weight:600; font-size:14px; cursor:pointer">Check</span>
+											</div>
+										</form>
 									</div>
 								</div>
-								<div class="col-md-6">
-									<ul style="list-style: none;">
-										<li>
-											<div class="row">
-												<div class="col-md-2" style="padding-right:0;">
-													<span style="margin-left:20px;">5 &#9733</span>
-												</div>
-												<div class="col-md-6" style="padding-left:0">
-													<div class="progress">
-														<div class="progress-bar progress-bar-green" style="width:66%">
-
-														</div>
-													</div>
-												</div>
-												<div class="col-md-4 review-number">
-														2
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="row">
-												<div class="col-md-2" style="padding-right:0;">
-													<span style="margin-left:20px;">4 &#9733</span>
-												</div>
-												<div class="col-md-6" style="padding-left:0">
-													<div class="progress">
-														<div class="progress-bar" role="progressbar" style="width:100%">
-
-														</div>
-													</div>
-												</div>
-												<div class="col-md-4 review-number">
-														3
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="row">
-												<div class="col-md-2" style="padding-right:0;">
-													<span style="margin-left:20px;">3 &#9733</span>
-												</div>
-												<div class="col-md-6" style="padding-left:0">
-													<div class="progress">
-														<div class="progress-bar progress-bar-green" style="width:66%">
-
-														</div>
-													</div>
-												</div>
-												<div class="col-md-4 review-number">
-														2
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="row">
-												<div class="col-md-2" style="padding-right:0;">
-													<span style="margin-left:20px;">2 &#9733</span>
-												</div>
-												<div class="col-md-6" style="padding-left:0">
-													<div class="progress">
-														<div class="progress-bar progress-bar-yellow" style="width:0%">
-
-														</div>
-													</div>
-												</div>
-												<div class="col-md-4 review-number">
-														0
-												</div>
-											</div>
-										</li>
-										<li>
-											<div class="row">
-												<div class="col-md-2" style="padding-right:0;">
-													<span style="margin-left:20px;">1 &#9733</span>
-												</div>
-												<div class="col-md-6" style="padding-left:0">
-													<div class="progress">
-														<div class="progress-bar progress-bar-red" style="width:0%">
-
-														</div>
-													</div>
-												</div>
-												<div class="col-md-4 review-number">
-														0
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
 							</div>
-							<div class="specs-list">
-								<div class="comments-heading">
-									<span class="comments-rating">5 &#9733</span>
-									<span class="comments-heading-text">Brilliant</span>
+						</div>
+						<div class="row" style="margin-top:10px;">
+							<div class="col-md-2">
+								<span style="color:#8c8c8c">Features</span>
+							</div>
+							<div class="col-md-4">
+								<ul class="features_ul" id="feat_ul">
+
+								</ul>
+							</div>
+							<div class="col-md-2">
+								<span style="color:#8c8c8c">Services</span>
+							</div>
+							<div class="col-md-4">
+								<ul class="features_ul" id="serv_ul">
+
+								</ul>
+							</div>
+						</div>
+						<div class="row" style="margin-top:10px;">
+							<div class="col-md-2">
+								<span style="color:#8c8c8c" id="seller"></span>
+							</div>
+							<div class="col-md-10">
+								<a href="#" style="text-decoration: none; font-weight:bold;">ABC</a>
+							</div>
+						</div>
+						<div class="row" style="margin-top:15px;">
+							<div class="col-md-2">
+								<span style="color:#8c8c8c">Description</span>
+							</div>
+							<div class="col-md-10">
+								<p style="font-weight:600; display:block;" id="description"></p>
+							</div>
+						</div>
+						<div class="specs">
+							<div class="heading">
+								Specifications
+							</div>
+							<div class="specs-list" id="specs-list-id">
+
+							</div>
+						</div>
+						<div class="rating-comment">
+							<div class="comments-list">
+								<div class="row rating-section">
+									<div class="col-md-2">
+										<span class="star-overall" id="star-overall-id"></span>
+										<div class="review" style="margin-top: 15px;" id="rating-id">
+										</div>
+										<div class="review" id="review-id">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<ul style="list-style: none;">
+											<li>
+												<div class="row">
+													<div class="col-md-2" style="padding-right:0;">
+														<span style="margin-left:20px;">5 &#9733</span>
+													</div>
+													<div class="col-md-6" style="padding-left:0">
+														<div class="progress">
+															<div class="progress-bar" id="star5">
+
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 review-number" id="star5-val">
+
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-md-2" style="padding-right:0;">
+														<span style="margin-left:20px;">4 &#9733</span>
+													</div>
+													<div class="col-md-6" style="padding-left:0">
+														<div class="progress">
+															<div class="progress-bar" role="progressbar" id="star4">
+
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 review-number" id="star4-val">
+
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-md-2" style="padding-right:0;">
+														<span style="margin-left:20px;">3 &#9733</span>
+													</div>
+													<div class="col-md-6" style="padding-left:0">
+														<div class="progress">
+															<div class="progress-bar progress-bar-green" id="star3">
+
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 review-number" id="star3-val">
+
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-md-2" style="padding-right:0;">
+														<span style="margin-left:20px;">2 &#9733</span>
+													</div>
+													<div class="col-md-6" style="padding-left:0">
+														<div class="progress">
+															<div class="progress-bar" id="star2">
+
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 review-number" id="star2-val">
+
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-md-2" style="padding-right:0;">
+														<span style="margin-left:20px;">1 &#9733</span>
+													</div>
+													<div class="col-md-6" style="padding-left:0">
+														<div class="progress">
+															<div class="progress-bar" id="star1">
+
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 review-number" id="star1-val">
+
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
 								</div>
-								<div class="comments-description">
-									<p>A brilliant product</p>
-								</div>
-								<div class="comments-footer">
-									<span class="comments-user">
-										<span class="glyphicon glyphicon-ok"></span>
-										<span comments-user-type> certified buyer</span>
-									</span>
-									<span style="float:right;">
-										<span class="comments-like glyphicon glyphicon-thumbs-up"></span>
-										<span>17</span>
-										<span class="comments-dislike glyphicon glyphicon-thumbs-down"></span>
-										<span>10</span>
-										<span class="comments-dropdown dropdown">
-											<a href="" class="dropdown-toggle" data-toggle="dropdown" style="text-decoration:none; color: inherit;"><span class="caret"></span></a>
-											<ul class="dropdown-menu">
-												<li class="dropdown-item"><a class="comments-dropdown-li-a" href="#">Report Abuse</a></li>
-											</ul>
-										</span>
-									</span>
+								<div class="specs-list" id="customerReviews">
+
 								</div>
 							</div>
 						</div>
