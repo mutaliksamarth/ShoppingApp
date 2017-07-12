@@ -9,7 +9,7 @@
 		<script src="js/jquery.js"></script>
 
 		<link rel="stylesheet" href="css/style.css">
-
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="js/bootstrap.js"></script>
 		<script src="js/ajax-utils.js"></script>
@@ -50,7 +50,7 @@
 			.features_li
 			{
 				font-family: sans-serif;
-				font-weight: bold;
+				font-weight: 600;
 
 			}
 			.features_li::before
@@ -222,10 +222,10 @@
 						</div>
 						<div class="row" style="margin-top:10px;">
 							<div class="col-md-2">
-								<span style="color:#8c8c8c" id="seller"></span>
+								<span style="color:#8c8c8c">Seller</span>
 							</div>
 							<div class="col-md-10">
-								<a href="#" style="text-decoration: none; font-weight:bold;">ABC</a>
+								<a href="#" style="text-decoration: none; font-weight:bold;" id="seller"></a>
 							</div>
 						</div>
 						<div class="row" style="margin-top:15px;">
@@ -233,7 +233,7 @@
 								<span style="color:#8c8c8c">Description</span>
 							</div>
 							<div class="col-md-10">
-								<p style="font-weight:600; display:block;" id="description"></p>
+								<p style="display:block;" id="description"></p>
 							</div>
 						</div>
 						<div class="specs">
@@ -263,7 +263,7 @@
 													</div>
 													<div class="col-md-6" style="padding-left:0">
 														<div class="progress">
-															<div class="progress-bar" id="star5">
+															<div class="progress-bar progress-bar-green" id="star5">
 
 															</div>
 														</div>
@@ -280,7 +280,7 @@
 													</div>
 													<div class="col-md-6" style="padding-left:0">
 														<div class="progress">
-															<div class="progress-bar" role="progressbar" id="star4">
+															<div class="progress-bar progress-bar-green" id="star4">
 
 															</div>
 														</div>
@@ -297,7 +297,7 @@
 													</div>
 													<div class="col-md-6" style="padding-left:0">
 														<div class="progress">
-															<div class="progress-bar progress-bar-green" id="star3">
+															<div class="progress-bar progress-bar-yellow" id="star3">
 
 															</div>
 														</div>
@@ -314,7 +314,7 @@
 													</div>
 													<div class="col-md-6" style="padding-left:0">
 														<div class="progress">
-															<div class="progress-bar" id="star2">
+															<div class="progress-bar progress-bar-yellow" id="star2">
 
 															</div>
 														</div>
@@ -331,7 +331,7 @@
 													</div>
 													<div class="col-md-6" style="padding-left:0">
 														<div class="progress">
-															<div class="progress-bar" id="star1">
+															<div class="progress-bar progress-bar-red" id="star1">
 
 															</div>
 														</div>
