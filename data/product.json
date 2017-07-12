@@ -1,9 +1,10 @@
 {
     "electronics": [
       {
+        "Url" : "/images/Electronic_1.jpg",
         "Category": "Electronics",
         "ProductId": "Electronic_1",
-        "Name": "An Electronic Item",
+        "Name": "Skullcandy SCS2DUFZ-385 Jib In-Ear Headphone",
         "Seller": "ABC",
         "OriginalPrice": 4500,
         "DiscountedPrice": 3000,
@@ -59,12 +60,13 @@
         }
       },
       {
+        "Url" : "/images/Electronic_2.jpg",
         "Category": "Electronics",
         "ProductId": "Electronic_2",
-        "Name": "An Electronic Item",
-        "Seller": "ABC",
-        "OriginalPrice": 4500,
-        "DiscountedPrice": 3000,
+        "Name": "Oneplus 5 Onyx 64GB Smartphone",
+        "Seller": "Oneplus",
+        "OriginalPrice": 32500,
+        "DiscountedPrice": 31500,
         "Description": "Skullcandy S2DUL-J522 Jib With Pill Mic Wired Headset Black Swirl What is Pill Mic?  It is only used for the conversation.  No button to receive/end calls.  No button to play/pause music.  No button for volume control. Designed for the music lovers, the Skullcandy JIB with Pill Mic In-Ear Earphone comes with an amazing amalgamation of style with performance. It features a 3.5 mm connector that facilitates you to easily connect the earphone with almost any gadget or device. With a frequency response range of 20-20 KHz, this excellent earphone produces crystal clear sound infused with utmost clarity and maximum noise suppression.Skullcandy JIB earphone offers 16 ohms impedance for an incredible audio quality. Get ready to enjoy your favourite songs with powerful and crystal clear sound performance with the Skullcandy earphone.",
         "Features": ["Laptop, Audio Player, Tablet, Mobile", "Design: Canalphone|Type: In the Ear", "Wired"],
         "Services": ["10 Day Replacement Policy", "2 Year Limited Domestic Warranty","COD Available"],
@@ -87,7 +89,7 @@
           ]]
         ],
         "Reviews":{
-          "Average": "4.1",
+          "Average": "4.7",
           "TotalReviews": 7,
           "TotalRatings": 20,
           "star5": 2,
