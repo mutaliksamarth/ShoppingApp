@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function (event){
                      "<p style=\"font-size:18px;\"><b style=\"margin-right:10px;\">&#8377;" + category[j].DiscountedPrice + "</b><span style=\"font-size:16px; font-weight:300\"><b style=\"color:#8c8c8c\"><strike>&#8377;" + category[j].OriginalPrice + "</strike></b></span></p>" +
                      "</span>"+
                      "<div>"+
-                     "<span><span style=\"margin:10px 10px 10px 0px; padding:5px; color:white; border-radius:5px; background-color:#388e3c; font-size:12px;\">" + category[j].Reviews.Average + "&#9733 </span><span style=\"color:#8c8c8c\">("+ category[j].Reviews.totalReviews + ")</span></span>"+
+                     "<span><span style=\"margin:10px 10px 10px 0px; padding:5px; color:white; border-radius:5px; background-color:#388e3c; font-size:12px;\">" + category[j].Reviews.Average + "&#9733 </span><span style=\"color:#8c8c8c\">("+ category[j].Reviews.TotalReviews + ")</span></span>"+
                      "</div>"+
                      "</div></a></div></div>";
         }

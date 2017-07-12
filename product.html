@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html>
 	<head>
@@ -399,3 +400,406 @@
 		</footer>
 	</body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="css/bootstrap-theme.css">
+
+		<script src="js/jquery.js"></script>
+
+		<link rel="stylesheet" href="css/style.css">
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="js/bootstrap.js"></script>
+		<script src="js/ajax-utils.js"></script>
+		<script src="js/angular.js"></script>
+		<script src="js/productJS.js"></script>
+		<script src="https://use.fontawesome.com/b1af24592c.js"></script>
+
+		<!--<script type="text/javascript">
+			function showMore()
+			{
+				document.getElementById('read_more').parentElement.removeChild();
+				document.getElementById('more').style.display('block');
+			}
+			document.getElementById('read_more').addEventListener('click', showMore);
+		</script>
+	-->
+		<style>
+			body
+			{
+				font-size: 14px;
+				font-family: sans-serif, Arial;
+			}
+			.a1
+			{
+				color:#ffffff;
+			}
+			.a1:hover
+			{
+				color:#c9cdd3;
+			}
+			.features_ul
+			{
+				font-weight:500;
+				color:#595959;
+				list-style:none;
+				padding: 0;
+			}
+			.features_li
+			{
+				font-family: sans-serif;
+				font-weight: 600;
+
+			}
+			.features_li::before
+			{
+				font-family:sans-serif;
+				font-weight:bolder;
+				content: "• ";
+				color:#8c8c8c;
+			}
+			.list-item
+			{
+				padding:20px;
+			}
+		</style>
+	</head>
+	<body style="background-color:#f3f3f3">
+		<div style="background-color:#fff; margin: 0px 100px 0 100px; padding-top: 10px; padding-bottom:10px;">
+			<div class="modal fade" id="modal-signin">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" data-dismiss="modal">&times;</button>
+							<h3>Login</h3>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<label>Email</label>
+									<input type="text" placeholder="Enter your email id" class="form-control" required>
+								</div>
+								<div class="form-group">
+									<label>Password</label>
+									<input type="password" placeholder="Enter your password" class="form-control" required>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<div style="text-align:center;">
+								<button class="btn btn-info">Sign In</button>
+							</div>
+							<div style="text-align:left">
+								<h6>New User? <a href="register.html">Sign up</a></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="index.html" class="navbar-brand">Smart Shop</a>
+					</div>
+					<div>
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutUs.html">About Us</a></li>
+							<li class="dropdown active">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Category <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<h2 class="dropdown-header dropdown-header-lg">Shoes</h2>
+										<a href="#"><div class="dropdown-item">Kids</div></a>
+										<a href="#"><div class="dropdown-item">Men</div></a>
+										<a href="#"><div class="dropdown-item">Women</div></a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<h2 class="dropdown-header">Mobile Accessories</h2>
+										<a href="#"><div class="dropdown-item">Earphones</div></a>
+										<a href="#"><div class="dropdown-item">Mobile Cases &amp; Covers</div></a>
+										<a href=""><div class="dropdown-item">Screen Guard</div></a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+
+					</div>
+					<div class="col-sm-3 col-md-6">
+						<form class="navbar-form">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" name="search" size="50">
+							<span class="input-group-btn">
+								<button class="btn btn-info" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+							</span>
+						</div>
+						</form>
+					</div>
+					<div>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown text-center">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="background-color:4ebbdb;">Login <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li style="text-align:center;">
+										<button class="btn btn-info" data-toggle="modal" data-target="#modal-signin"><div class="dropdown-item" style="width:100px; display:block; margin:0 auto; text-align:center; left:50% margin-left:50px;">Sign In</div></button>
+										<h6 class="dropdown-header">New User? <a href="register.html">Sign up</a></h6>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#"><div class="dropdown-item"><span class="glyphicon glyphicon-user"></span> Your Account</div></a>
+										<a href="#"><div class="dropdown-item"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</div></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div id="main-content">
+				 <div class="container-fluid" style="margin:70px 0px 20px auto;">
+					<div class="col-md-3">
+						<img src="http://placehold.it/1920x1600" style="border: solid 1px #f0f0f0; padding:5px; max-width:100%; max-height:100%;">
+						<div class="row" style="margin-top:20px;" id="buttons">
+							<div class="col-md-6 nopadding-right">
+								<button type="button" class="btn btn-info btn-block" id="buy_button"><span class="glyphicon glyphicon-flag"></span> Buy Now</button>
+							</div>
+							<div class="col-md-6 nopadding-left">
+								<button type="button" class="btn btn-info btn-block" id="cart_button"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<h3 id="name"></h3>
+						<div class="">
+							<span style="margin:10px 10px 10px 0px; padding:5px; color:white; border-radius:5px; background-color:#388e3c; font-size:12px;" id="rating-header"></span>
+							<span style="color:#8c8c8c; font-size:14px;"><span id="rating-header-number"></span> &amp; <span id="rating-header-rating"></span></span>
+						</div>
+						<div class="" style="margin-top:10px;">
+							<span style="font-size:24px;"><b id="discountedPrice"></b></span>
+							<span style="color:#8c8c8c; font-size:16px; margin-left:10px;"><strike><span id="originalPrice"></span></strike></span>
+						</div>
+						<div class="row" style="margin-top:10px;">
+							<div class="col-md-2">
+								<span style="color:#8c8c8c">Delivery</span>
+							</div>
+							<div class="col-md-10">
+								<div class="col-md-5" style="border-bottom: solid px #2874f0; padding: 0 0 0px 0;">
+									<div class="form-group">
+										<form class="form-inline" method="post">
+											<div class="form-group">
+												<input type="text" name="pincode" placeholder="Check your pincode here" style="border:none; outline:none;">
+											</div>
+											<div class="form-group">
+												<span style="color:#2874f0; margin-left:auto; font-weight:600; font-size:14px; cursor:pointer">Check</span>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row" style="margin-top:10px;">
+							<div class="col-md-2">
+								<span style="color:#8c8c8c">Features</span>
+							</div>
+							<div class="col-md-4">
+								<ul class="features_ul" id="feat_ul">
+
+								</ul>
+							</div>
+							<div class="col-md-2">
+								<span style="color:#8c8c8c">Services</span>
+							</div>
+							<div class="col-md-4">
+								<ul class="features_ul" id="serv_ul">
+
+								</ul>
+							</div>
+						</div>
+						<div class="row" style="margin-top:10px;">
+							<div class="col-md-2">
+								<span style="color:#8c8c8c">Seller</span>
+							</div>
+							<div class="col-md-10">
+								<a href="#" style="text-decoration: none; font-weight:bold;" id="seller"></a>
+							</div>
+						</div>
+						<div class="row" style="margin-top:15px;">
+							<div class="col-md-2">
+								<span style="color:#8c8c8c">Description</span>
+							</div>
+							<div class="col-md-10">
+								<p style="display:block;" id="description"></p>
+							</div>
+						</div>
+						<div class="specs">
+							<div class="heading">
+								Specifications
+							</div>
+							<div class="specs-list" id="specs-list-id">
+
+							</div>
+						</div>
+						<div class="rating-comment">
+							<div class="comments-list">
+								<div class="row rating-section">
+									<div class="col-md-2">
+										<span class="star-overall" id="star-overall-id"></span>
+										<div class="review" style="margin-top: 15px;" id="rating-id">
+										</div>
+										<div class="review" id="review-id">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<ul style="list-style: none;">
+											<li>
+												<div class="row">
+													<div class="col-md-2" style="padding-right:0;">
+														<span style="margin-left:20px;">5 &#9733</span>
+													</div>
+													<div class="col-md-6" style="padding-left:0">
+														<div class="progress">
+															<div class="progress-bar progress-bar-green" id="star5">
+
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 review-number" id="star5-val">
+
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-md-2" style="padding-right:0;">
+														<span style="margin-left:20px;">4 &#9733</span>
+													</div>
+													<div class="col-md-6" style="padding-left:0">
+														<div class="progress">
+															<div class="progress-bar progress-bar-green" id="star4">
+
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 review-number" id="star4-val">
+
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-md-2" style="padding-right:0;">
+														<span style="margin-left:20px;">3 &#9733</span>
+													</div>
+													<div class="col-md-6" style="padding-left:0">
+														<div class="progress">
+															<div class="progress-bar progress-bar-yellow" id="star3">
+
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 review-number" id="star3-val">
+
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-md-2" style="padding-right:0;">
+														<span style="margin-left:20px;">2 &#9733</span>
+													</div>
+													<div class="col-md-6" style="padding-left:0">
+														<div class="progress">
+															<div class="progress-bar progress-bar-yellow" id="star2">
+
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 review-number" id="star2-val">
+
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-md-2" style="padding-right:0;">
+														<span style="margin-left:20px;">1 &#9733</span>
+													</div>
+													<div class="col-md-6" style="padding-left:0">
+														<div class="progress">
+															<div class="progress-bar progress-bar-red" id="star1">
+
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 review-number" id="star1-val">
+
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="specs-list" id="customerReviews">
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer style="background-color:#333333; color:#ffffff">
+			<div class="container">
+				<div class="row" style="margin-top:40px;">
+					<div class="col-xs-4" style="text-align:center">
+						<h4><b>Get To Know Us</b></h4>
+						<ul class="list-unstyled">
+							<li><a href="#" class="a1" style="text-decoration:none;">About Us</a></li>
+							<li><a href="#" class="a1" style="text-decoration:none;">Achievements</a></li>
+							<li><a href="#" class="a1" style="text-decoration:none;">Careers</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-4" style="text-align:center">
+						<h4><b>Our Partners</b></h4>
+						<ul class="list-unstyled">
+							<li><a href="#" class="a1" style="text-decoration:none;">Partners</a></li>
+							<li><a href="#" class="a1" style="text-decoration:none;">Fundings</a></li>
+							<li><a href="#" class="a1" style="text-decoration:none;">Companies We Own</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-4" style="text-align:center">
+						<h4><b>Let Us Help You</b></h4>
+						<ul class="list-unstyled">
+							<li><a href="#" class="a1" style="text-decoration:none;">Leave Feedback</a></li>
+							<li><a href="#" class="a1" style="text-decoration:none;">Contact Us</a></li>
+							<li><a href="#" class="a1" style="text-decoration:none;">Returns And Cash Back</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row" style="margin-top:30px;">
+					<div class="col-xs-4">
+					</div>
+					<div class="col-xs-4">
+						<div class="text-center center-block">
+							<a href="https://www.facebook.com" id="social-fb"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
+							<a href="https://www.facebook.com" id="social-tw"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+							<a href="https://www.facebook.com" id="social-in"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+							<a href="https://www.facebook.com" id="social-gp"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="col-xs-4">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+>>>>>>> Stashed changes
