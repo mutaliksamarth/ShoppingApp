@@ -175,3 +175,14 @@
 	color: #f0f0f0;
 	background-color: none;
 }
+
+.panel-self
+{
+	border: solid 1px #eeeeee;
+}
+.panel-heading-self
+{
+	background-color: #eeeeee;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
